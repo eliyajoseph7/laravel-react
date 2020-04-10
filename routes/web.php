@@ -1,5 +1,5 @@
 <?php
-
+use App\News;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/new', function(){
+    $new = News::all();
+    return $new;
 });
+Route::view('/{path?}', 'welcome');
+
