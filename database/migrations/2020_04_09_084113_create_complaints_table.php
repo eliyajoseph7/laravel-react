@@ -18,7 +18,7 @@ class CreateComplaintsTable extends Migration
             $table->string('name');
             $table->string('street');
             $table->string('phone');
-            $table->string('complaint');
+            $table->longText('complaint');
             $table->timestamps();
         });
     }
