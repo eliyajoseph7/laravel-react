@@ -18,5 +18,6 @@ Route::get('/new', function(){
     $new = News::all();
     return $new;
 });
+Route::view('/admin/{path?}', 'admin/admin');
 Route::view('/{path?}', 'welcome');
 
