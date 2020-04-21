@@ -4,36 +4,44 @@ import { Link } from 'react-router-dom'
 function Navbar() {
     return (
         <div>
-            {/* Navigation */}
-        <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-          <div className="container">
-            <Link className="navbar-brand ml-5" to="/">
-                {/* <img src={logo} alt="logo" style={{ width:'2rem'}} /> */}
-            </Link>
-                <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon" />
+                {/* Navigation */}
+          <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div className="container">
+              <Link className="navbar-brand js-scroll-trigger" to="/">GW-US</Link>
+              <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i className="fas fa-bars" />
               </button>
               <div className="collapse navbar-collapse" id="navbarResponsive">
-                  <ul className="navbar-nav ml-auto">
-                  <li className="nav-item active ml-5">
-                    <Link className="nav-link text-white text-uppercase" to="/">Home&nbsp;<i className='fa fa-home'></i> <span className="sr-only">(current)</span></Link>
+                <ul className="navbar-nav text-uppercase ml-auto">
+                  <li className="nav-item">
+                    <a className="nav-link js-scroll-trigger" href="#services">Services</a>
                   </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="about.html">About</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li className="nav-item dropdown">
-                      <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Portfolio
-                      </a>
-                    </li>
+                  <li className="nav-item">
+                    <a className="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link js-scroll-trigger" href="#about">About</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link js-scroll-trigger" href="#team">Team</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                  </li>
+                  <li className="nav-item ml-5">
+                      <Link className="nav-link" to="/news">News</Link>
+                  </li>
+                  <li className="nav-item ml-5">
+                    <Link className="nav-link" to="/products">Our Products</Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
                     
-                    <li className="nav-item ml-5">
+                    {/* <li className="nav-item ml-5">
                       <Link className="nav-link text-white text-uppercase" to="/news">news</Link>
                     </li>
                     <li className="nav-item ml-5">
@@ -46,7 +54,7 @@ function Navbar() {
                   </form>
               </div>
           </div>
-        </nav>
+        </nav> */}
         </div>
     )
 }
