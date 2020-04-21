@@ -13,3 +13,4 @@ require('./bootstrap');
  */
 
 require('./components/Index');
+require('./componentsadmin/Index');
