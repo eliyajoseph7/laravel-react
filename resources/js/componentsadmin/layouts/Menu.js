@@ -34,26 +34,6 @@ export default class Menu extends Component {
                 <i className="right fas fa-angle-left" />
               </p>
             </a>
-            <ul className="nav nav-treeview">
-              <li className="nav-item">
-                <a href="./index.html" className="nav-link active">
-                  <i className="far fa-circle nav-icon" />
-                  <p>Dashboard v1</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="./index2.html" className="nav-link">
-                  <i className="far fa-circle nav-icon" />
-                  <p>Dashboard v2</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="./index3.html" className="nav-link">
-                  <i className="far fa-circle nav-icon" />
-                  <p>Dashboard v3</p>
-                </a>
-              </li>
-            </ul>
           </li>
           <li className="nav-item">
             <a href="pages/widgets.html" className="nav-link">
