@@ -19,5 +19,6 @@ Route::get('/new', function(){
     return $new;
 });
 Route::view('/admin/{path?}', 'admin/admin');
+Route::view('/products/{path?}', 'welcome');
 Route::view('/{path?}', 'welcome');
 
