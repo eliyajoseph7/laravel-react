@@ -29,7 +29,7 @@ function Services() {
                           <i className="fas fa-shopping-cart fa-stack-1x fa-inverse" />
                         </span>
                         <h4 className="service-heading">Electronic devices supply</h4>
-                        <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <p className="text-muted">We are dealig with the supplying of highly advanced Electronic materials with a high quality....</p>
                       </div>
                       <div className="col-md-4">
                         <span className="fa-stack fa-4x">
@@ -37,7 +37,8 @@ function Services() {
                           <i className="fas fa-laptop fa-stack-1x fa-inverse" />
                         </span>
                         <h4 className="service-heading">Web development</h4>
-                        <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <p className="text-muted">Are you looking for an advanced and very wonderfull websites!.. Here we make you happier<span style={{color: 'gold'}}><i class="fas fa-smile"></i></span> than ever. we are also developing
+                        very interesting mobile applications in both android and iphones.</p>
                       </div>
                       <div className="col-md-4">
                         <span className="fa-stack fa-4x">
@@ -45,7 +46,7 @@ function Services() {
                           <i className="fas fa-book-open fa-stack-1x fa-inverse" />
                         </span>
                         <h4 className="service-heading">Programming crash courses</h4>
-                        <p className="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                        <p className="text-muted">We offer a lot of programming crash courses for free. These courses are only for those who are new in programming.</p>
                       </div>
                     </div>
                   </div>

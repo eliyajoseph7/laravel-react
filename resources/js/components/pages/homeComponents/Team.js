@@ -6,7 +6,7 @@ function Team() {
             <div className="container">
                 <div className="text-center">
                     <h2 className="section-heading text-uppercase">Our Amazing Team</h2>
-                    <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 className="section-subheading text-muted">Top leaders in Good-Morning.</h3>
                 </div>
                 <div className="row">
                 <div className="col-lg-4">
@@ -35,7 +35,7 @@ function Team() {
                 </div>
                 </div>
                 <div className="row">
-                <div className="col-lg-8 mx-auto text-center"><p className="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+                <div className="col-lg-8 mx-auto text-center"><p className="large text-muted">The Good-Morning company has a lot of workers and partners from different part of the country and outside the country.</p></div>
                 </div>
             </div>
         </section>

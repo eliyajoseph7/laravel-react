@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import Loader from '../Loader'
 import useAxiosGet from '../Hooks/HttpRequests'
 import ProductsList from '../ProductsList'
