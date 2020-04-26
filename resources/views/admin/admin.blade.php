@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 3 | Dashboard</title>
+    <title>Admin</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Font Awesome -->
@@ -27,12 +27,14 @@
     <link rel="stylesheet" href="{{url('plugins/summernote/summernote-bs4.css')}}">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{url('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
     <div id="root">
         <div class="wrapper">
-            hdhsg
+            
         </div>
     </div>
     
@@ -58,7 +60,7 @@
     <!-- jQuery Knob Chart -->
     <script src="{{url('plugins/jquery-knob/jquery.knob.min.js')}}"></script>
     <!-- daterangepicker -->
-    <script src="plugins/moment/moment.min.js"></script>
+    <script src="{{url('plugins/moment/moment.min.js')}}"></script>
     <script src="{{url('plugins/daterangepicker/daterangepicker.js')}}"></script>
     <!-- Tempusdominus Bootstrap 4 -->
     <script src="{{url('plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js')}}"></script>
@@ -71,6 +73,11 @@
 
     <script src="{{url('js/app.js')}}"></script>
 
+    <!-- DataTable -->
+    <script src="{{url('plugins/datatables/jquery.dataTables.min.js')}}"></script>
+    <script src="{{url('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js')}}"></script>
+    <script src="{{url('plugins/datatables-responsive/js/dataTables.responsive.min.js')}}"></script>
+    <script src="{{url('plugins/datatables-responsive/js/responsive.bootstrap4.min.js')}}"></script>
 </body>
 
 </html>
