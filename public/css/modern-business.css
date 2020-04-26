@@ -261,6 +261,43 @@
     object-fit: cover;
 }
 
+.counter {
+    background-color: #474E5D;
+    padding: 40px;
+    color: #fff;
+}
+
+.count-value {
+    color: gold;
+    margin-bottom: 50px;
+    text-align: center
+}
+
+.count-value .div {
+    background-color: #fff;
+    width: 200px;
+    height: 200px;
+    border: 7px solid rgba(0, 0, 0, .1);
+    background-color: gray;
+}
+
+.count-value p {
+    font-size: 25px;
+    color: #fff;
+}
+
+.value {
+    margin-top: 30%;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+hr.divider {
+    max-width: 3.25rem;
+    border-width: 0.2rem;
+    border-color: #f4623a;
+}
+
 .footer {
     padding-top: 5rem;
     padding-bottom: 5rem;
