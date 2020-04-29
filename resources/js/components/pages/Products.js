@@ -5,15 +5,12 @@ import ProductsList from '../ProductsList'
 import Pagination from '../Pagination'
 
 function Products() {
-    const url = `https://5e98afff5eabe7001681c474.mockapi.io/api/v1/products`
+    const url = `http://127.0.0.1:8000/api/products`
     
     let products = useAxiosGet(url)
     const [currentPage, setCurrentPage] = useState(1)
     const [productsPerPage] = useState(6)
     
-
-    
-
 
     // Get current product
     const indexOfLastProduct = currentPage * productsPerPage
@@ -133,7 +130,7 @@ function Products() {
                     </div>
                     <div className="col-lg-6">
                         {/* <img className="img-fluid rounded" src="http://placehold.it/700x450"  /> */}
-                        <iframe width="550" height="315" src="https://www.youtube.com/embed/HDEVMozZhv8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="550" height="315" src="https://www.youtube.com/embed/HDEVMozZhv8" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </div>
                 {/* /.row */}

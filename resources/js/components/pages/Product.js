@@ -5,7 +5,7 @@ import Loader from '../Loader'
 
 function Product() {
     const { id } = useParams()
-    const url = `https://5e98afff5eabe7001681c474.mockapi.io/api/v1/products/${id}`
+    const url = `http://127.0.0.1:8000/api/products/${id}`
     
     let product = useAxiosGet(url)
 
@@ -48,7 +48,7 @@ function Product() {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-8">
-                                <h1 className="mt-4">{product.data.material}</h1>
+                                <h1 className="mt-4">{product.data.name}</h1>
                                 <p className="lead">
                                     by
                                     <a href="fake_url">Start Bootstrap</a>
