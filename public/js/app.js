@@ -72351,7 +72351,7 @@ function Footer() {
     className: "text-uppercase mb-4"
   }, "About Me"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "lead mb-0"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "You can know more about me "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "You can know more about me", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/about-me"
   }, "by clicking here!"), " "))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
     className: "copyright py-4 text-center text-white"
@@ -72399,8 +72399,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 function useAxiosGet(url) {
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
     loading: false,
-    data: null,
-    alert_message: ''
+    data: null
   }),
       _useState2 = _slicedToArray(_useState, 2),
       request = _useState2[0],
@@ -72410,22 +72409,19 @@ function useAxiosGet(url) {
     setRequest({
       loading: true,
       data: null,
-      error: false,
-      alert_message: ''
+      error: false
     });
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url).then(function (response) {
       setRequest({
         loading: false,
-        data: response.data,
-        error: false,
-        alert_message: 'success'
+        data: response.data.data,
+        error: false
       });
     })["catch"](function () {
       setRequest({
         loading: false,
         data: null,
-        error: true,
-        alert_message: 'error'
+        error: true
       });
     });
   }, [url]);
@@ -72735,9 +72731,9 @@ function ProductsList(products) {
       className: "card-title"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
       to: "/products/".concat(product.id)
-    }, product.name)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    }, product.product_name)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
       className: "card-text"
-    }, product.description)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    }, product.short_description)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
       to: "/products/".concat(product.id),
       className: "btn btn-primary w-75 m-auto flex p-2 justify-center mb-3"
     }, "View")));
@@ -72923,7 +72919,7 @@ function Product() {
   var _useParams = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(),
       id = _useParams.id;
 
-  var url = "https://5e98afff5eabe7001681c474.mockapi.io/api/v1/products/".concat(id);
+  var url = "http://127.0.0.1:8000/api/products/".concat(id);
   var product = Object(_Hooks_HttpRequests__WEBPACK_IMPORTED_MODULE_2__["default"])(url);
   var content = null;
 
@@ -72952,7 +72948,7 @@ function Product() {
       className: "col-lg-8"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
       className: "mt-4"
-    }, product.data.material), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    }, product.data.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
       className: "lead"
     }, "by", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
       href: "fake_url"
@@ -73046,7 +73042,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 function Products() {
-  var url = "https://5e98afff5eabe7001681c474.mockapi.io/api/v1/products";
+  var url = "http://127.0.0.1:8000/api/products";
   var products = Object(_Hooks_HttpRequests__WEBPACK_IMPORTED_MODULE_2__["default"])(url);
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(1),
@@ -73056,8 +73052,9 @@ function Products() {
 
   var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(6),
       _useState4 = _slicedToArray(_useState3, 1),
-      productsPerPage = _useState4[0]; // Get current product
+      productsPerPage = _useState4[0];
 
+  console.log(products.data); // Get current product
 
   var indexOfLastProduct = currentPage * productsPerPage;
   var indexOfFirstProduct = indexOfLastProduct - productsPerPage; // Change page
@@ -73175,9 +73172,9 @@ function Products() {
       width: "550",
       height: "315",
       src: "https://www.youtube.com/embed/HDEVMozZhv8",
-      frameborder: "0",
+      frameBorder: "0",
       allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
-      allowfullscreen: true
+      allowFullScreen: true
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "row mb-4"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -73640,7 +73637,7 @@ function Services() {
       color: 'gold'
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    "class": "fas fa-smile"
+    className: "fas fa-smile"
   })), " than ever. we are also developing very interesting mobile applications in both android and iphones.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-md-4"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
