@@ -37,7 +37,7 @@ function Services() {
                           <i className="fas fa-laptop fa-stack-1x fa-inverse" />
                         </span>
                         <h4 className="service-heading">Web development</h4>
-                        <p className="text-muted">Are you looking for an advanced and very wonderfull websites!.. Here we make you happier<span style={{color: 'gold'}}><i class="fas fa-smile"></i></span> than ever. we are also developing
+                        <p className="text-muted">Are you looking for an advanced and very wonderfull websites!.. Here we make you happier<span style={{color: 'gold'}}><i className="fas fa-smile"></i></span> than ever. we are also developing
                         very interesting mobile applications in both android and iphones.</p>
                       </div>
                       <div className="col-md-4">
