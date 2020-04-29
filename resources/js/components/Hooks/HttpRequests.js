@@ -18,7 +18,7 @@ function useAxiosGet(url) {
             .then(response => {
                 setRequest({
                     loading: false,
-                    data: response.data,
+                    data: response.data.data,
                     error: false
                 })
             })
