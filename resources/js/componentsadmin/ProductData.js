@@ -14,7 +14,7 @@ function ProductData(props) {
                    
                     <td>{ count++ }</td>
                     <td style={{width: "150px"}}><img src={product.image} className="img-thumbnail" /></td>
-                    <td>{product.name}</td>
+                    <td>{product.product_name}</td>
                     <td>{product.description}</td>
                     <td>{product.price}</td>
                     <td className="justify-content-between" style={{width: "100px"}}>
