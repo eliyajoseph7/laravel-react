@@ -3,7 +3,7 @@ import axios from 'axios'
 import { useForm } from 'react-hook-form'
 
 function AddProduct() {
-    const url = `https://5e98afff5eabe7001681c474.mockapi.io/api/v1/products`
+    const url = `http://127.0.0.1:8000/api/products`
     const { register, handleSubmit, watch, errors } = useForm()
    
           
@@ -43,7 +43,7 @@ function AddProduct() {
                             <div className="row">
                               <div className="col">
                                 <div className="form-group">
-                                <label>Title</label>
+                                <label>Product Name</label>
                                   <input className="form-control" name="name" type="text" ref={register({required: true})}/>
                                   {errors.name && <span style={{color: "red"}}>This field is required!</span>}
                                 </div>

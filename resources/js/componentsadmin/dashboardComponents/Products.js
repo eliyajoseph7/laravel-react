@@ -6,7 +6,7 @@ import Pagination from '../Pagination'
 import Loader from '../../components/Loader'
 
 function Products() {
-    const url = `https://5e98afff5eabe7001681c474.mockapi.io/api/v1/products`
+    const url = `http://127.0.0.1:8000/api/products`
     let products = useAxiosGet(url)
 
     const [currentPage, setCurrentPage] = useState(1)
@@ -53,7 +53,7 @@ function Products() {
                                 <tr>
                                 <th style={{width: 10}}>#</th>
                                 <th>Picture</th>
-                                <th>Title</th>
+                                <th>Product Name</th>
                                 <th>Description</th>
                                 <th>Price</th>
                                 <th style={{width: 40}}>Action</th>
@@ -67,7 +67,7 @@ function Products() {
                                 <tr>
                                 <th style={{width: 10}}>#</th>
                                 <th>Picture</th>
-                                <th>Title</th>
+                                <th>Product Name</th>
                                 <th>Description</th>
                                 <th>Price</th>
                                 <th style={{width: 40}}>Action</th>

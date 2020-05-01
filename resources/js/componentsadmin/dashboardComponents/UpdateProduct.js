@@ -7,7 +7,7 @@ import Loader from '../../components/Loader'
 function UpdateProduct() {
     
   const { id } = useParams()
-  const url = `https://5e98afff5eabe7001681c474.mockapi.io/api/v1/products/${id}`
+  const url = `http://127.0.0.1:8000/api/products/${id}`
   let product = useAxiosGet(url)
     
     let content = null
@@ -24,7 +24,6 @@ function UpdateProduct() {
     }
     if(product.data){
    
-      
         content = <TheForm product={product.data}/>
             
 
