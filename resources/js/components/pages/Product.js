@@ -51,11 +51,11 @@ function Product() {
                                 <h1 className="mt-4">{product.data.name}</h1>
                                 <p className="lead">
                                     by
-                                    <a href="fake_url">Start Bootstrap</a>
+                                    <a href="fake_url">GOOD-MORNING product</a>
                                 </p>
                                 <hr />
                                 {/* Date/Time */}
-                                <p>Posted on January 1, 2019 at 12:00 PM</p>
+                                <p>Posted on {product.data.created_at}</p>
                                 <hr />
                                 {/* Preview Image */}
                                 <img className="img-fluid rounded" src={product.data.image} alt={product.data.name} />
