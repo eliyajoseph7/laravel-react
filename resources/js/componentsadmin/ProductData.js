@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import useAxiosGet from '../components/Hooks/HttpRequests'
 
 let count = 1
 function ProductData(product) {
