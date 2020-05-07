@@ -27,7 +27,7 @@ export default class Menu extends Component {
           {/* Add icons to the links using the .nav-icon class
          with font-awesome or any other icon font library */}
           <li className="nav-item has-treeview menu-open">
-            <a href="#" className="nav-link active">
+            <a href="/admin" className="nav-link active">
               <i className="nav-icon fas fa-tachometer-alt" />
               <p>
                 Dashboard
@@ -108,9 +108,9 @@ export default class Menu extends Component {
             </a>
             <ul className="nav nav-treeview">
               <li className="nav-item">
-                <a href="pages/charts/chartjs.html" className="nav-link">
+                <a href="/admin/sales" className="nav-link">
                   <i className="far fa-circle nav-icon" />
-                  <p>ChartJS</p>
+                  <p>Product Sales</p>
                 </a>
               </li>
               <li className="nav-item">
