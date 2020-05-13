@@ -19,4 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::apiResource('/get-news', 'Api\V1\NewsController');
 Route::apiResource('/products', 'Api\V1\ProductsController');
-
+Route::apiResource('/data', 'Charts\SalesController');
