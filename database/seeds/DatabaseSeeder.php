@@ -17,5 +17,13 @@ class DatabaseSeeder extends Seeder
             $products->save();
             });
         
+        factory(App\Client::class, 100)->create()->each(function($clients){
+            $clients->save();
+            });
+        
+        factory(App\Sale::class, 100)->create()->each(function($sales){
+            $sales->save();
+            });
+        
     }
 }
