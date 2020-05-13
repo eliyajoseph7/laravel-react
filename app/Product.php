@@ -26,4 +26,12 @@ class Product extends Model
    public function category(){
         return $this->belongsTo(ProductCategory::class);
    }
+
+   public function sale(){
+        return $this->belongsTo(Sale::class);
+   }
+
+   public function client(){
+        return $this->belongsTo(Client::class);
+   }
 }
