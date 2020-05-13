@@ -1,16 +1,17 @@
 import React, { Component } from 'react'
-import axios from 'axios';
+// import axios from 'axios';
 import Products from './dashboardComponents/Products';
 import ProductSalesChart from './charts/ProductSalesChart';
 
 export default class Dashboard extends Component {
 
-    constructor(){
-        super()
-        this.state = {
-            salesData: {}
-        }
-    }
+    // constructor(){
+    //     super()
+    //     this.state = {
+    //         salesData: {},
+    //         array: []
+    //     }
+    // }
 
     // componentDidMount() {
     //     const script = document.createElement('script');
@@ -27,38 +28,39 @@ export default class Dashboard extends Component {
     //             this.setState({news:response.data.data})
     //         });
         
+    // // }
+    // componentDidMount(){
+    //     this.getSalesData();
     // }
-    componentWillMount(){
-        this.getSalesData();
-    }
 
-    getSalesData(){
-        // Ajax request here
-        this.setState({
-            salesData: {
-                labels: ['software', 'hardware', 'autoparts', 'electronics', 'agriculture'],
-                datasets: [
-                    {
-                        label: 'Product Sales',
-                        data: [
-                            '72847',
-                            '7883',
-                            '72847',
-                            '7532',
-                            '72647',
-                        ],
-                        backgroundColor: ['green', 'yellow', 'gold', 'violet', 'pink']
-                    },
-                ]
-            }
-        })
-    }
+    // getSalesData(){
+    //     // Ajax request here
+    //      axios.get("http://127.0.0.1:8000/api/data")
+    //         .then(response => {
+    //             // console.log(response.data.data[0].sales_data)
+    //                 this.setState({
+    //                     salesData: {
+    //                         labels: response.data.data[0].product_category,
+    //                         datasets: [
+    //                             {
+    //                                 label: 'Product Sales',
+    //                                 data: response.data.data[0].sales_data,
+    //                                 backgroundColor: ['green', 'yellow', 'gold', 'violet', 'pink']
+    //                             },
+    //                         ]
+    //                     }
+    //                 })
+    //                 console.log(this.state.salesData)
+    //         })
+            
+        
+    // }
     
 
     render() {
         return (
             <div className="content-wrapper">
-                <ProductSalesChart salesData={this.state.salesData} legendPosition="bottom"/>
+                <ProductSalesChart legendPosition="bottom" />
                 <Products />
             </div>
 
