@@ -8,6 +8,10 @@ function TheForm(product) {
     const { id } = useParams()
     const url = `http://127.0.0.1:8000/api/products/${id}`
     const { register, handleSubmit } = useForm();
+    const [ message, setMessage ] = useState({
+      message: ' '
+               
+  })
 
     // const initialFormData = Object.freeze({
     //   product_name: product.product.product_name,
@@ -50,13 +54,25 @@ function TheForm(product) {
   
               axios.put(url, data)
                 .then(response => {
+                   setMessage({
+                     message: <div className="alert alert-success alert-dismissible fade show" role="alert">
+                     <strong>{product.product.product_name}</strong> updated successfully.
+                     <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+                       <span aria-hidden="true">&times;</span>
+                     </button>
+                   </div>
+                   })
                     console.log(response.data)
+                    
                 })
               
               
             }
     return (
         <div className="content-wrapper">
+            {message.message}
+                 
+          {console.log(message.message)}
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
   <div className="container">
     <div className="row flex-lg-nowrap">
